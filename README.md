@@ -36,8 +36,12 @@ FikrLib adalah aplikasi manajemen perpustakaan berbasis web yang dibangun dengan
 - Node.js dan NPM (untuk frontend build)
 
 ## ERD
-  `https://dbdiagram.io/d/68a88e531e7a6119672e8a4a`
-  `https://dbdocs.io/fikri.dulumina/FikrLib?view=relationships`
+
+  - [FikrLib](https://dbdocs.io/fikri.dulumina/FikrLib)
+  - [FikrLib.Authentication](https://dbdocs.io/fikri.dulumina/FikrLib.Authentication)
+  - [FikrLib.Catalog](https://dbdocs.io/fikri.dulumina/FikrLib.Catalog)
+  - [FikrLib.Circulation](https://dbdocs.io/fikri.dulumina/FikrLib.Circulation)
+  - [FikrLib.Support](https://dbdocs.io/fikri.dulumina/FikrLib.Support)
 
 ## Instalasi
 
