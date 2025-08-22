@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Book;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+        $books = Book::with(['authors', 'categories'])->paginate(10);
+        return view('admin.books.index', compact('books'));
     }
 
     /**
@@ -20,7 +22,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.books.create');
     }
 
     /**

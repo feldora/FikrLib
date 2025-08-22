@@ -46,16 +46,16 @@
                 <div class="p-6">
                     <h3 class="text-lg font-semibold mb-4">Aksi Cepat</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <a href="{{ route('books.create') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
+                        <a href="{{ route('admin.books.create') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
                             Tambah Buku
                         </a>
-                        <a href="{{ route('members.create') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
+                        <a href="{{ route('admin.members.create') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
                             Tambah Anggota
                         </a>
-                        <a href="{{ route('loans.create') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
+                        <a href="{{ route('admin.loans.create') }}" class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
                             Peminjaman Baru
                         </a>
-                        <a href="{{ route('loans.index') }}?status=overdue" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-500">
+                        <a href="{{ route('admin.loans.index') }}?status=overdue" class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-500">
                             Lihat Keterlambatan
                         </a>
                     </div>
