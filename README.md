@@ -1,4 +1,12 @@
 # FikrLib: Library Management System
+FikrLib adalah aplikasi perpustakaan digital yang terinspirasi dari semangat abad kejayaan Islam, ketika ilmu pengetahuan berkembang pesat melalui perpustakaan agung seperti Bayt al-Hikmah di Baghdad dan perpustakaan Cordoba di Andalusia.
+
+Dengan menggabungkan warisan intelektual Islam dan teknologi modern, FikrLib hadir sebagai pusat pengetahuan yang menyediakan akses ke berbagai literatur, mulai dari karya klasik hingga koleksi digital kontemporer.
+
+## Makna Nama
+
+- **Fikr (فكر)** → melambangkan pemikiran, refleksi, dan pencarian ilmu.
+- **Lib** → singkatan dari Library, simbol perpustakaan modern.
 
 FikrLib adalah aplikasi manajemen perpustakaan berbasis web yang dibangun dengan **Laravel 12**. Aplikasi ini dirancang untuk mempermudah pengelolaan koleksi buku, peminjaman, pengembalian, dan aktivitas lain yang terkait dengan perpustakaan, dengan tujuan untuk memberikan pengalaman pengguna yang efisien dan mudah digunakan.
 
@@ -22,7 +30,7 @@ FikrLib adalah aplikasi manajemen perpustakaan berbasis web yang dibangun dengan
 
 ## Persyaratan Sistem
 
-- PHP >= 8.1
+- PHP >= 8.4
 - Composer
 - MySQL atau SQLite
 - Node.js dan NPM (untuk frontend build)
@@ -32,7 +40,7 @@ FikrLib adalah aplikasi manajemen perpustakaan berbasis web yang dibangun dengan
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/username/fikrlib.git
+git clone https://github.com/feldora/fikrlib.git
 cd fikrlib
 ```
 
