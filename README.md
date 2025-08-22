@@ -35,6 +35,10 @@ FikrLib adalah aplikasi manajemen perpustakaan berbasis web yang dibangun dengan
 - MySQL atau SQLite
 - Node.js dan NPM (untuk frontend build)
 
+## ERD
+  `https://dbdiagram.io/d/68a88e531e7a6119672e8a4a`
+  `https://dbdocs.io/fikri.dulumina/FikrLib?view=relationships`
+
 ## Instalasi
 
 ### 1. Clone repository
@@ -81,38 +85,53 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 6. Migrasi database
+### 6. Setup Laravel Sail
+
+Laravel Sail adalah lingkungan development Docker yang ringan. Untuk menginstallnya:
+
+```bash
+composer require laravel/sail --dev
+php artisan sail:install
+```
+
+### 7. Start Docker container
+
+```bash
+./vendor/bin/sail up -d
+```
+
+### 8. Migrasi database
 
 Jalankan migrasi untuk membuat tabel-tabel yang diperlukan dalam database:
 
 ```bash
-php artisan migrate
+./vendor/bin/sail artisan migrate
 ```
 
-### 7. Install dependensi frontend
+### 9. Install dependensi frontend
 
 Jalankan perintah berikut untuk menginstal dependensi frontend:
 
 ```bash
-npm install
+./vendor/bin/sail npm install
 ```
 
-### 8. Build assets frontend
+### 10. Build assets frontend
 
 Setelah dependensi terinstal, buat dan kompilasi file frontend:
 
 ```bash
-npm run dev
+./vendor/bin/sail npm run dev
 ```
 
 ## Menjalankan Aplikasi
 
-### 1. Jalankan server Laravel
+### 1. Start Docker container
 
-Untuk menjalankan aplikasi di server lokal, gunakan perintah:
+Jika container belum berjalan, jalankan:
 
 ```bash
-php artisan serve
+./vendor/bin/sail up -d
 ```
 
 Aplikasi akan berjalan di `http://127.0.0.1:8000`.

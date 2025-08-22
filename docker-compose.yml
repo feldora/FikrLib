@@ -1,7 +1,7 @@
 services:
     fikrlib.app:
         build:
-            context: ./vendor/laravel/sail/runtimes/8.4
+            context: ./docker/8.4
             dockerfile: Dockerfile
             args:
                 WWWGROUP: '${WWWGROUP}'
@@ -19,6 +19,7 @@ services:
             IGNITION_LOCAL_SITES_PATH: '${PWD}'
         volumes:
             - '.:/var/www/html'
+            - './docker/8.3/php.ini:/usr/local/etc/php/conf.d/99-sail.ini'
         networks:
             - fikrlib
         depends_on:
